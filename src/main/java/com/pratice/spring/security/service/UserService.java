@@ -21,6 +21,9 @@ public class UserService {
     @Autowired
     private JWTService jwtService;
 
+    @Autowired
+    private UserRepo repository;
+
 
     private BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12);
 

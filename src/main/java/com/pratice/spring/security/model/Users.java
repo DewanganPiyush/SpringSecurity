@@ -1,5 +1,6 @@
 package com.pratice.spring.security.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
@@ -8,7 +9,10 @@ public class Users {
 
     @Id
     private int id;
+
+    @Column(unique = true)
     private String username;
+
     private String password;
 
     public Users() {}
